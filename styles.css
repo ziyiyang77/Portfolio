@@ -13,6 +13,13 @@ header {
     text-align: center;
 }
 
+footer {
+    background-color: #133715;
+    color: white;
+    padding: 3em 0;
+    text-align: center;
+}
+
 nav {
     background-color: #FFFFFF;
     padding: 0.5em 0;
@@ -85,7 +92,7 @@ nav {
 
 .game-title {
     margin: 0.5em 0;
-    height: 2.6em; 
+    height: 2.6em;
     overflow: hidden;
 }
 
@@ -137,24 +144,28 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 600px; 
-    margin: auto; 
+    max-width: 600px;
+    margin: auto;
 }
 
 .about-image {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     background-color: #CCC;
     margin-bottom: 1em;
 }
 
-.name-title, .skills-title, .gaming-experience-title {
+.name-title,
+.skills-title,
+.gaming-experience-title {
     color: #133715;
     margin: 0.5em 0;
 }
 
-.biography, .skills-description, .gaming-experience-description {
+.biography,
+.skills-description,
+.gaming-experience-description {
     text-align: justify;
     margin: 0.5em 0;
     padding: 0 1em;
@@ -168,7 +179,7 @@ nav {
 
 .skills-list li {
     margin-bottom: 0.5em;
-    line-height: 1.4; 
+    line-height: 1.4;
 }
 
 .contact {
@@ -187,6 +198,7 @@ nav {
 }
 
 @media (max-width: 767px) {
+
     /* Adjust the layout and font sizes for mobile */
     header {
         padding: 2em 0;
@@ -212,12 +224,13 @@ nav {
     }
 
     .about-content {
-        padding: 0 10px; 
+        padding: 0 10px;
         max-width: 100%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
     /* Adjustments for tablet devices */
     .game {
         flex-basis: 50%;
@@ -234,18 +247,19 @@ nav {
 }
 
 @media (min-width: 992px) {
+
     /* Adjustments for desktop devices */
     header {
-        padding: 4em 0; 
+        padding: 4em 0;
     }
 
     .portfolio-heading,
     .about-heading,
     .contact-heading {
-        font-size: 2.5em; 
+        font-size: 2.5em;
     }
 
     .about-content {
-        max-width: 600px; 
+        max-width: 600px;
     }
 }
