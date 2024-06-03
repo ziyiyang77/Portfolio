@@ -1,0 +1,251 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #F1FAF5;
+    color: #133715;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #133715;
+    color: white;
+    padding: 3em 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #FFFFFF;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.nav-link {
+    color: #133715;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin: 0 0.5em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #133715;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.portfolio {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-heading {
+    text-align: center;
+    color: #133715;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.2;
+    display: block;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.game {
+    text-align: center;
+    flex-basis: 20%;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.game img {
+    width: 256px;
+    height: 144px;
+    background-color: #CCC;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 0em 0.5em;
+}
+
+.game img:hover,
+.game img:focus {
+    transform: scale(1.25);
+}
+
+.game-title {
+    margin: 0.5em 0;
+    height: 2.6em; 
+    overflow: hidden;
+}
+
+.game-description {
+    color: #000000;
+    height: 10.3em;
+    overflow: hidden;
+}
+
+.game-role {
+    color: #000000;
+    height: 2.9em;
+    overflow: hidden;
+}
+
+.play-button {
+    display: block;
+    background-color: #133715;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.play-button:hover,
+.play-button:focus {
+    background-color: #0F2610;
+}
+
+.about {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1FAF5;
+}
+
+.about-heading {
+    text-align: center;
+    color: #133715;
+    margin: 2rem 0;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; 
+    margin: auto; 
+}
+
+.about-image {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    background-color: #CCC;
+    margin-bottom: 1em;
+}
+
+.name-title, .skills-title, .gaming-experience-title {
+    color: #133715;
+    margin: 0.5em 0;
+}
+
+.biography, .skills-description, .gaming-experience-description {
+    text-align: justify;
+    margin: 0.5em 0;
+    padding: 0 1em;
+    line-height: 1.5;
+}
+
+.skills-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 0.5em;
+    line-height: 1.4; 
+}
+
+.contact {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-heading {
+    text-align: center;
+    color: #133715;
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 767px) {
+    /* Adjust the layout and font sizes for mobile */
+    header {
+        padding: 2em 0;
+    }
+
+    .nav-link {
+        padding: 0.3em 0.5em;
+    }
+
+    .portfolio-heading,
+    .about-heading,
+    .contact-heading {
+        font-size: 1.5em;
+    }
+
+    .game {
+        flex-basis: 100%;
+    }
+
+    .game img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-content {
+        padding: 0 10px; 
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Adjustments for tablet devices */
+    .game {
+        flex-basis: 50%;
+    }
+
+    .game img {
+        width: 80%;
+        height: auto;
+    }
+
+    .about-content {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Adjustments for desktop devices */
+    header {
+        padding: 4em 0; 
+    }
+
+    .portfolio-heading,
+    .about-heading,
+    .contact-heading {
+        font-size: 2.5em; 
+    }
+
+    .about-content {
+        max-width: 600px; 
+    }
+}
